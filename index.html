@@ -1,1 +1,114 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="ad/favicon.ico">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      direction: rtl; /* Set text direction to right-to-left for Arabic */
+      overflow: hidden; /* Hide scroll bars */
+    }
 
+    .top-bar, .bottom-bar {
+      background-color: gray;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .content {
+      background-color: white;
+      padding: 20px;
+      filter: blur(0); /* Initially, no blur */
+      transition: filter 0.3s ease; /* Smooth transition for blur effect */
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 15px 25px; /* Adjust padding for larger button */
+      font-size: 18px;
+      font-weight: bold;
+      background-color: #00bcd4; /* Cyan color */
+      color: white;
+      border: none;
+      border-radius: 20px; /* Make the button round */
+      cursor: pointer;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      font-weight: bold;
+    }
+
+    .menu {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #f0f0f0; /* Milky color for menu background */
+      padding: 20px;
+      text-align: center;
+      border: 2px solid gray;
+      border-radius: 10px;
+      z-index: 1; /* Ensure menu appears above other elements */
+    }
+
+    .menu h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .dismiss-button {
+      margin-top: 20px;
+      padding: 10px 15px;
+      font-size: 16px;
+      font-weight: bold;
+      background-color: #00bcd4; /* Cyan color */
+      color: white;
+      border: none;
+      border-radius: 10px; /* Make the button round */
+      cursor: pointer;
+    }
+  </style>
+  <title>🎉🎉  احصل علي الجوائز </title>
+</head>
+<body>
+  <div class="top-bar">
+    شركه Apple
+  </div>
+  <div class="content">
+    <p>•340 الف شخص مستخدام الان في موقعنا</p>
+    <p>•204 الف شخص كسب</p>
+    <br>
+    <p>مرحباً بك في شركة Apple لتوزيع جوائز كل سنة في بداية السنة</p>
+    <button onclick="window.location.href='iphone.html'">الحصول علي الجوائز </button>
+    <p>شركة أبل هي شركة تكنولوجيا أمريكية متعددة الجنسيات يقع مقرها الرئيسي في كوبرتينو. كاليفورنيا. اعتبارًا من مارس 2023. تعد شركة Apple أكبر شركة في العالم من حيث القيمة السوقية، 6! ومع 394.3 مليار دولار أمريكي أكبر شركة تكنولوجيا بحلول عام 2022 إيرادات. اعتبارًا من يونيو 2022، أصبحت شركة أبل رابع أكبر بائع لأجهزة الكمبيوتر الشخصية من حيث مبيعات الوحدات؛ أكبر شركة تصنيع من حيث الإيرادات؛ وثاني أكبر شركة مصنعة للهواتف المحمولة في العالم. وتعتبر إحدى الشركات الخمس الكبرى في مجال تكنولوجيا المعلومات الأمريكية، إلى جانب شركة Alphabet (الشركة الأم لشركة Google)، وAmazon، وMeta (الشركة الأم لفيسبوك)، وMicrosoft.‏</p>
+    <img src="https://media.discordapp.net/attachments/1149108735403364382/1191365330438733884/download.png?ex=65a52c6d&is=6592b76d&hm=58c28ad9a4aa40864daa2296fc887e5b66c0c58dc9ca4bdbf269d775909464e5" alt="شعار Apple">
+  </div>
+  <div class="menu" id="menu">
+    <h2> 🎉مرحبا بك زائرنا 🎉</h2>
+    <p>انت في المكان الصح لأن كل جوائزنا حقيقية. اتمنى أن تعجبك الجوائز ومتخفش لو جالك حظ أوفر عيد تاني وأن شاء الله تفوز.</p>
+    <button class="dismiss-button" onclick="dismissMenu()">تمام يا صحبي</button>
+  </div>
+  <div class="bottom-bar">
+    شركه Apple
+  </div>
+  <script>
+    function dismissMenu() {
+      document.getElementById('menu').style.display = 'none';
+      document.body.style.overflow = 'auto'; /* Restore scroll bars */
+      document.querySelector('.content').style.filter = 'blur(0)';
+    }
+
+    // Initially, blur the content and show the menu
+    document.querySelector('.content').style.filter = 'blur(5px)';
+  </script>
+</body>
+  </html>
+  
